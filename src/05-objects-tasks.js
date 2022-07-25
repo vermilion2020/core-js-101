@@ -146,11 +146,12 @@ const cssSelectorBuilder = {
     return this;
   },
 
-  combine(selector1, combinator, selector2) {
-    this.current = selector1.stringify();
+  combine(/* selector1, combinator, selector2 */) {
+    throw new Error('Not implemented');
+    /* this.current = selector1.stringify();
     this.current += ` ${combinator} `;
     this.current += selector2.stringify();
-    return this;
+    return this; */
   },
 
   stringify() {
